@@ -240,8 +240,8 @@ export default function App() {
                                     <Text style={{ fontSize: 20 }}>💖</Text>
                                 </View>
                             </View>
-                            <Text style={styles.title}>Yay! You said YES!</Text>
-                            <Text style={styles.subtitle}>I LOVE YOU BABY</Text>
+                            <Text style={[styles.title, styles.successTitle]}>Yay! You said YES!</Text>
+                            <Text style={[styles.subtitle, styles.successSubtitle]}>I LOVE YOU BABY</Text>
                         </Animated.View>
                     ) : (
                         <View style={{ alignItems: 'center', width: '100%', justifyContent: 'center' }}>
@@ -671,6 +671,14 @@ const styles = StyleSheet.create({
         color: '#ffffff',
         textAlign: 'center',
         opacity: 0.9,
+    },
+    successTitle: {
+        color: '#e11d48',
+        textShadowOpacity: 0,
+    },
+    successSubtitle: {
+        color: '#be185d',
+        opacity: 1,
     },
     headerTitle: {
         fontSize: 34,
