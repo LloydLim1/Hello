@@ -320,11 +320,9 @@ export default function App() {
                                 <Animated.View
                                     key={item.id}
                                     entering={FadeInDown.delay(index * 100)}
+                                    style={styles.gridItem}
                                 >
-                                    <View style={[
-                                        styles.gridItem,
-                                        { transform: [{ rotate: item.rotation || '0deg' }] }
-                                    ]}>
+                                    <View style={{ transform: [{ rotate: item.rotation || '0deg' }] }}>
                                         <TouchableOpacity
                                             onPress={() => openPhotoDetail(item)}
                                             activeOpacity={0.9}
@@ -352,11 +350,9 @@ export default function App() {
                                 <Animated.View
                                     key={item.id}
                                     entering={FadeInDown.delay(500 + (index * 50))}
+                                    style={styles.stackedItem}
                                 >
-                                    <View style={[
-                                        styles.stackedItem,
-                                        { transform: [{ rotate: item.rotation || '0deg' }] }
-                                    ]}>
+                                    <View style={{ transform: [{ rotate: item.rotation || '0deg' }] }}>
                                         <TouchableOpacity
                                             onPress={() => openPhotoDetail(item)}
                                             activeOpacity={0.9}
