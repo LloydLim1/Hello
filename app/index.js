@@ -322,7 +322,7 @@ export default function App() {
                                     entering={FadeInDown.delay(index * 100)}
                                     style={styles.gridItem}
                                 >
-                                    <View style={{ transform: [{ rotate: item.rotation || '0deg' }] }}>
+                                    <View style={{ width: '100%', transform: [{ rotate: item.rotation || '0deg' }] }}>
                                         <TouchableOpacity
                                             onPress={() => openPhotoDetail(item)}
                                             activeOpacity={0.9}
@@ -345,14 +345,14 @@ export default function App() {
                         <Text style={[styles.headerTitle, { marginTop: 40, fontSize: 24 }]}>More Snaps of you and me hehe</Text>
                         <View style={[styles.divider, { width: '20%', marginBottom: 20 }]} />
 
-                        <View style={styles.gridContainer}>
+                        <View style={[styles.gridContainer, { width: '100%' }]}>
                             {extraPhotos.map((item, index) => (
                                 <Animated.View
                                     key={item.id}
                                     entering={FadeInDown.delay(500 + (index * 50))}
                                     style={styles.stackedItem}
                                 >
-                                    <View style={{ transform: [{ rotate: item.rotation || '0deg' }] }}>
+                                    <View style={{ width: '100%', transform: [{ rotate: item.rotation || '0deg' }] }}>
                                         <TouchableOpacity
                                             onPress={() => openPhotoDetail(item)}
                                             activeOpacity={0.9}
@@ -548,19 +548,19 @@ const styles = StyleSheet.create({
         fontSize: 14,
     },
     homePhotoContainer: {
-        width: 160,
-        height: 160,
-        borderRadius: 80,
+        width: 180,
+        height: 180,
+        borderRadius: 90,
         borderWidth: 6,
         borderColor: 'white',
-        overflow: 'visible', // For the pop-out heart
+        overflow: 'hidden',
         marginBottom: 25,
         shadowColor: '#e11d48',
         shadowOffset: { width: 0, height: 10 },
         shadowOpacity: 0.2,
         shadowRadius: 15,
         elevation: 10,
-        backgroundColor: '#fff',
+        backgroundColor: 'rgba(255,255,255,0.5)',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -591,6 +591,7 @@ const styles = StyleSheet.create({
         paddingBottom: 150, // Space for floating tab bar
     },
     gridContainer: {
+        width: '100%',
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
