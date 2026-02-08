@@ -244,8 +244,8 @@ export default function App() {
                             <Text style={styles.subtitle}>I LOVE YOU BABY</Text>
                         </Animated.View>
                     ) : (
-                        <>
-                            <View style={[styles.homePhotoContainer, { overflow: 'hidden' }]}>
+                        <View style={{ alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+                            <View style={styles.homePhotoContainer}>
                                 <Image
                                     key={hasMoved ? 'no' : 'initial'}
                                     source={hasMoved ? noPhoto : initialPhoto}
@@ -253,7 +253,7 @@ export default function App() {
                                     resizeMode="cover"
                                 />
                             </View>
-                            <Animated.Text entering={FadeInDown.delay(400)} style={styles.title}>Will you be my Valentine?</Animated.Text>
+                            <Text style={styles.title}>Will you be my Valentine?</Text>
 
                             <TouchableOpacity
                                 style={[styles.button, styles.yesButton]}
@@ -278,7 +278,7 @@ export default function App() {
                             >
                                 <Text style={styles.buttonText}>No</Text>
                             </TouchableOpacity>
-                        </>
+                        </View>
                     )}
                 </View>
             );
