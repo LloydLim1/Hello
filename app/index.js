@@ -245,7 +245,7 @@ export default function App() {
                         </Animated.View>
                     ) : (
                         <>
-                            <View style={styles.homePhotoContainer}>
+                            <View style={[styles.homePhotoContainer, { overflow: 'hidden' }]}>
                                 <Image
                                     key={hasMoved ? 'no' : 'initial'}
                                     source={hasMoved ? noPhoto : initialPhoto}
@@ -376,7 +376,7 @@ export default function App() {
         <SafeAreaProvider>
             <View style={styles.container}>
                 <LinearGradient
-                    colors={['#fff1f2', '#ffe4e6', '#fecdd3']}
+                    colors={['#fb7185', '#fda4af', '#fff1f2']}
                     style={StyleSheet.absoluteFill}
                 />
 
@@ -503,6 +503,8 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#fb7185',
+        overflow: 'hidden',
     },
     safeArea: {
         flex: 1,
@@ -510,9 +512,13 @@ const styles = StyleSheet.create({
     contentArea: {
         flex: 1,
         zIndex: 5,
+        width: '100%',
+        height: '100%',
     },
     mainWrapper: {
         flex: 1,
+        width: '100%',
+        height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
     },
