@@ -394,7 +394,9 @@ export default function App() {
                     <StatusBar barStyle="dark-content" />
 
                     <View style={styles.contentArea}>
-                        {renderContent()}
+                        <View style={styles.webWrapper}>
+                            {renderContent()}
+                        </View>
                     </View>
 
                     {/* PHOTO DETAIL MODAL */}
@@ -444,7 +446,7 @@ export default function App() {
                     {yesPressed && (
                         <Animated.View
                             entering={FadeInUp.springify().damping(15)}
-                            style={styles.floatingTabBarContainer}
+                            style={styles.floatingTabBarOuter}
                         >
                             <View style={styles.floatingTabBar}>
                                 <TouchableOpacity
@@ -518,6 +520,12 @@ const styles = StyleSheet.create({
     contentArea: {
         flex: 1,
         zIndex: 5,
+        alignItems: 'center',
+    },
+    webWrapper: {
+        width: '100%',
+        maxWidth: 500, // Capps width on web/tablets
+        flex: 1,
     },
     mainWrapper: {
         flex: 1,
@@ -552,12 +560,12 @@ const styles = StyleSheet.create({
         fontSize: 14,
     },
     homePhotoContainer: {
-        width: 160,
-        height: 160,
-        borderRadius: 80,
+        width: SCREEN_WIDTH > 500 ? 200 : 160,
+        height: SCREEN_WIDTH > 500 ? 200 : 160,
+        borderRadius: SCREEN_WIDTH > 500 ? 100 : 80,
         borderWidth: 6,
         borderColor: 'white',
-        overflow: 'visible', // For the pop-out heart
+        overflow: 'visible',
         marginBottom: 25,
         shadowColor: '#e11d48',
         shadowOffset: { width: 0, height: 10 },
@@ -571,12 +579,12 @@ const styles = StyleSheet.create({
     homePhoto: {
         width: '100%',
         height: '100%',
-        borderRadius: 80,
+        borderRadius: SCREEN_WIDTH > 500 ? 100 : 80,
     },
     photoHeart: {
         position: 'absolute',
-        bottom: -5,
-        right: -5,
+        bottom: SCREEN_WIDTH > 500 ? 5 : -5,
+        right: SCREEN_WIDTH > 500 ? 5 : -5,
         backgroundColor: 'white',
         width: 44,
         height: 44,
