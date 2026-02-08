@@ -132,7 +132,7 @@ I love you so much baby! Let's celebrate valentines together okay? mwa
 
 -Lloyd your baby loves
 
-PS: SORRY SA MGA MALING LOCATIONS SA PHOTOBOOTH HAHAHAHA I LOVE YOU
+PS: SORRY SA MGA MALING LOCATIONS SA PHOTOBOOTH HAHAHAHA I LOVE YOU PAKINGGAN MO RIN UNG KANTA SA BACKGROUND HAHAHAHA
 `;
 
 export default function App() {
