@@ -235,7 +235,7 @@ export default function App() {
                             >
                                 <Image
                                     key="success"
-                                    source={successPhoto}
+                                    source={require('../assets/images/photo23.jpg')}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
                                 />
@@ -254,7 +254,7 @@ export default function App() {
                             >
                                 <Image
                                     key={hasMoved ? 'no' : 'initial'}
-                                    source={hasMoved ? noPhoto : initialPhoto}
+                                    source={hasMoved ? require('../assets/images/photo25.jpg') : require('../assets/images/photo24.jpg')}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
                                 />
@@ -599,7 +599,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     gridItem: {
-        width: '47%',
+        width: (SCREEN_WIDTH - 60) / 2,
         backgroundColor: 'rgba(255,255,255,0.95)',
         padding: 5,
         marginBottom: 20,
@@ -632,7 +632,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     stackedItem: {
-        width: '47%',
+        width: (SCREEN_WIDTH - 60) / 2,
         backgroundColor: 'white',
         padding: 4,
         marginBottom: 20,
