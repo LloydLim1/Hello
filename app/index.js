@@ -229,36 +229,30 @@ export default function App() {
                             entering={FadeInUp.springify().damping(12).mass(1.2)}
                             style={styles.centerContent}
                         >
-                            <Animated.View
-                                entering={FadeInDown.delay(300).springify()}
-                                style={styles.homePhotoContainer}
-                            >
+                            <View style={styles.homePhotoContainer}>
                                 <Image
                                     key="success"
-                                    source={require('../assets/images/photo23.jpg')}
+                                    source={successPhoto}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
                                 />
                                 <View style={styles.photoHeart}>
                                     <Text style={{ fontSize: 20 }}>💖</Text>
                                 </View>
-                            </Animated.View>
+                            </View>
                             <Text style={styles.title}>Yay! You said YES!</Text>
                             <Text style={styles.subtitle}>I LOVE YOU BABY</Text>
                         </Animated.View>
                     ) : (
                         <>
-                            <Animated.View
-                                entering={FadeInDown.delay(200)}
-                                style={styles.homePhotoContainer}
-                            >
+                            <View style={styles.homePhotoContainer}>
                                 <Image
                                     key={hasMoved ? 'no' : 'initial'}
-                                    source={hasMoved ? require('../assets/images/photo25.jpg') : require('../assets/images/photo24.jpg')}
+                                    source={hasMoved ? noPhoto : initialPhoto}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
                                 />
-                            </Animated.View>
+                            </View>
                             <Animated.Text entering={FadeInDown.delay(400)} style={styles.title}>Will you be my Valentine?</Animated.Text>
 
                             <TouchableOpacity
@@ -562,7 +556,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 15,
         elevation: 10,
-        backgroundColor: 'rgba(255,255,255,0.5)',
+        backgroundColor: '#f3f4f6', // Light gray placeholder
         alignItems: 'center',
         justifyContent: 'center',
     },
