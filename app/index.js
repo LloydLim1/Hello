@@ -234,6 +234,7 @@ export default function App() {
                                 style={styles.homePhotoContainer}
                             >
                                 <Image
+                                    key="success"
                                     source={successPhoto}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
@@ -252,6 +253,7 @@ export default function App() {
                                 style={styles.homePhotoContainer}
                             >
                                 <Image
+                                    key={hasMoved ? 'no' : 'initial'}
                                     source={hasMoved ? noPhoto : initialPhoto}
                                     style={styles.homePhoto}
                                     resizeMode="cover"
@@ -565,9 +567,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     homePhoto: {
-        width: '100%',
-        height: '100%',
-        borderRadius: 80,
+        width: 180,
+        height: 180,
+        borderRadius: 90,
     },
     photoHeart: {
         position: 'absolute',
