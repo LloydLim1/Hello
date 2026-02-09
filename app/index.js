@@ -84,13 +84,13 @@ const FloatingHearts = () => {
 // 📸 DATA: PHOTOBOOTH STRIPS
 // -------------------------------------------------------------------
 const photoboothStrips = [
-    { id: 101, source: require('../assets/images/photo1.jpg'), caption: "SM Sta.Mesa", description: "Eto pa ung galing ako school HAHAHHA I LOVE YOU", rotation: '-2deg' },
+    { id: 101, source: require('../assets/images/photo1.jpg'), caption: "SM Sta.Mesa", description: "Eto pa ung galing ako school HAHAHHA I LOVE YOU", rotation: '0deg' },
     { id: 102, source: require('../assets/images/photo2.jpg'), caption: "Mall of Asia", description: "NAKALIMUTAN KO SAN TO SORRY BABY I LOVE YOU", rotation: '3deg' },
-    { id: 103, source: require('../assets/images/photo3.jpg'), caption: "Ayala Sea Side", description: "ETO ATA UNG NASA SEA SIDE TAYO?? HAHHAHAHA I LOVE YOU OR BAKA SA SHANG ITO", rotation: '-1deg' },
+    { id: 103, source: require('../assets/images/photo3.jpg'), caption: "Ayala Sea Side", description: "ETO ATA UNG NASA SEA SIDE TAYO?? HAHHAHAHA I LOVE YOU OR BAKA SA SHANG ITO", rotation: '0deg' },
     { id: 104, source: require('../assets/images/photo4.jpg'), caption: "Shangri-La Plaza", description: "ETO RIN HAHAHAHHHA I LOVE YOU BABY", rotation: '-4deg' },
-    { id: 105, source: require('../assets/images/photo5.jpg'), caption: "Tomo Coffee", description: "Eto ung parang busy pa ata ako non tas pagod ako, tapos andon rin sila tim AHAHHA i love you", rotation: '2deg' },
-    { id: 106, source: require('../assets/images/photo6.jpg'), caption: "Greenhills", description: "ETO UNG NAG DATE TAYO SA GREENHILLS EYYY NAALALA KO HAAHAHA I LOVE YOU", rotation: '3deg' },
-    { id: 107, source: require('../assets/images/photo7.jpg'), caption: "Gateway Mall", description: "ETO UNG GALING PA TAYO SA MAKATI HAHAHAHA I LOVE YOU BABY i'm so happy to be with you", rotation: '-1deg' },
+    { id: 105, source: require('../assets/images/photo5.jpg'), caption: "Tomo Coffee", description: "Eto ung parang busy pa ata ako non tas pagod ako, tapos andon rin sila tim AHAHHA i love you", rotation: '0deg' },
+    { id: 106, source: require('../assets/images/photo6.jpg'), caption: "Greenhills", description: "ETO UNG NAG DATE TAYO SA GREENHILLS EYYY NAALALA KO HAAHAHA I LOVE YOU", rotation: '0deg' },
+    { id: 107, source: require('../assets/images/photo7.jpg'), caption: "Gateway Mall", description: "ETO UNG GALING PA TAYO SA MAKATI HAHAHAHA I LOVE YOU BABY i'm so happy to be with you", rotation: '0deg' },
 ];
 
 const successPhoto = require('../assets/images/photo23.jpg');
@@ -113,6 +113,15 @@ const extraPhotos = [
     { id: 20, source: require('../assets/images/photo20.jpg'), rotation: '0deg' },
     { id: 21, source: require('../assets/images/photo21.jpg'), rotation: '0deg' },
     { id: 22, source: require('../assets/images/photo22.jpg'), rotation: '0deg' },
+    { id: 23, source: require('../assets/images/photo23.jpg'), rotation: '0deg' },
+    { id: 24, source: require('../assets/images/photo24.jpg'), rotation: '0deg' },
+    { id: 25, source: require('../assets/images/photo25.jpg'), rotation: '0deg' },
+    { id: 26, source: require('../assets/images/photo26.jpg'), rotation: '0deg' },
+    { id: 27, source: require('../assets/images/photo27.jpg'), rotation: '0deg' },
+    { id: 28, source: require('../assets/images/photo28.jpg'), rotation: '0deg' },
+    { id: 29, source: require('../assets/images/photo29.jpg'), rotation: '0deg' },
+    { id: 30, source: require('../assets/images/photo30.jpg'), rotation: '0deg' },
+    { id: 31, source: require('../assets/images/photo31.jpg'), rotation: '0deg' },
 ];
 
 const myLetter = `
