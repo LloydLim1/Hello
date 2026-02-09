@@ -98,21 +98,21 @@ const initialPhoto = require('../assets/images/photo24.jpg');
 const noPhoto = require('../assets/images/photo25.jpg');
 
 const extraPhotos = [
-    { id: 8, source: require('../assets/images/Photo8.jpg'), rotation: '4deg' },
-    { id: 9, source: require('../assets/images/photo9.jpg'), rotation: '-3deg' },
-    { id: 10, source: require('../assets/images/photo10.jpg'), rotation: '2deg' },
-    { id: 11, source: require('../assets/images/photo11.jpg'), rotation: '-5deg' },
-    { id: 12, source: require('../assets/images/photo12.jpg'), rotation: '3deg' },
-    { id: 13, source: require('../assets/images/photo13.jpg'), rotation: '-2deg' },
-    { id: 14, source: require('../assets/images/photo14.jpg'), rotation: '4deg' },
-    { id: 15, source: require('../assets/images/photo15.jpg'), rotation: '-1deg' },
-    { id: 16, source: require('../assets/images/photo16.jpg'), rotation: '2deg' },
-    { id: 17, source: require('../assets/images/photo17.jpg'), rotation: '-3deg' },
-    { id: 18, source: require('../assets/images/photo18.jpg'), rotation: '5deg' },
-    { id: 19, source: require('../assets/images/photo19.jpg'), rotation: '-2deg' },
-    { id: 20, source: require('../assets/images/photo20.jpg'), rotation: '1deg' },
-    { id: 21, source: require('../assets/images/photo21.jpg'), rotation: '-4deg' },
-    { id: 22, source: require('../assets/images/photo22.jpg'), rotation: '3deg' },
+    { id: 8, source: require('../assets/images/Photo8.jpg'), rotation: '0deg' },
+    { id: 9, source: require('../assets/images/photo9.jpg'), rotation: '0deg' },
+    { id: 10, source: require('../assets/images/photo10.jpg'), rotation: '0deg' },
+    { id: 11, source: require('../assets/images/photo11.jpg'), rotation: '0deg' },
+    { id: 12, source: require('../assets/images/photo12.jpg'), rotation: '0deg' },
+    { id: 13, source: require('../assets/images/photo13.jpg'), rotation: '0deg' },
+    { id: 14, source: require('../assets/images/photo14.jpg'), rotation: '0deg' },
+    { id: 15, source: require('../assets/images/photo15.jpg'), rotation: '0deg' },
+    { id: 16, source: require('../assets/images/photo16.jpg'), rotation: '0deg' },
+    { id: 17, source: require('../assets/images/photo17.jpg'), rotation: '0deg' },
+    { id: 18, source: require('../assets/images/photo18.jpg'), rotation: '0deg' },
+    { id: 19, source: require('../assets/images/photo19.jpg'), rotation: '0deg' },
+    { id: 20, source: require('../assets/images/photo20.jpg'), rotation: '0deg' },
+    { id: 21, source: require('../assets/images/photo21.jpg'), rotation: '0deg' },
+    { id: 22, source: require('../assets/images/photo22.jpg'), rotation: '0deg' },
 ];
 
 const myLetter = `
